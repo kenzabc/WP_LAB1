@@ -1,0 +1,209 @@
+body {
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+header, footer {
+    background-image: url("../img/techleaf.jpg");
+    padding: 15px;
+    text-align: center;
+    background-position: center;
+    color: white;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(167, 167, 167);
+    padding: 10px;
+    
+}
+h1 {
+    color: darkgreen;
+}
+
+h2 {
+    color: rgb(93, 76, 51);
+}
+
+h2 ~ h3 {
+    color: brown ;
+}
+
+nav {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+nav a:first-child:hover {
+    background-color: #aacaa2; 
+}
+nav a:nth-child(2):hover {
+    background-color: #7fc97f; 
+}
+nav a:nth-child(3):hover {
+    background-color: #36771e; 
+}
+nav a:nth-child(4):hover {
+    background-color: #204716; 
+}
+
+section a {
+    color: rgb(93, 76, 51); /* I know it's supposed to be pink but i don't like it visually*/
+    font-style: italic;
+}
+
+header img {
+    border-radius: 8px;
+    height: 20%;
+    width: 40%;
+}
+
+#citation, #definition {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#postit {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.postit-item {
+    background-color: #b78144;
+    border: 1px solid #b78144;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+#postit .postit-item ul {
+    display: none;
+    position: absolute;
+    background-color: #625c5c;
+    min-width: 200px;
+    z-index: 1;
+}
+
+#postit .postit-item:hover ul {
+    display: block;
+}
+
+#postit .postit-item ul li {
+    color: rgb(44, 73, 37);
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+#postit .postit-item:nth-child(1) {
+    background-color: #5e8256;
+}
+
+#postit .postit-item:nth-child(2) {
+    background-color: #86bd86;
+}
+
+#postit .postit-item:nth-child(3) {
+    background-color: #407b30;
+}
+
+#postit .postit-item:nth-child(4) {
+    background-color: #1d5217;
+}
+
+#postit .postit-item:nth-child(5) {
+    background-color: #094b09;
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+
+td, th {
+    border: 1px solid #dddddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+form {
+    margin-top: 20px; 
+    
+}
+
+fieldset {
+    border: 1px solid #2e7d32; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+legend {
+    font-weight: bold; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+button[type="submit"] {
+    padding: 10px 20px; 
+    background-color: #4caf50; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+.quiz{
+    display: none;
+}
